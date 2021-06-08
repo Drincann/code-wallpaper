@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Fira Code';
+            src: url(./woff2/FiraCode-Regular.woff2);
+        }
+        
+        * {
+            font-family: 'Fira Code';
+        }
+        
+        body {
+            background-color: #313B45;
+        }
+        
+        .main {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .code {
+            padding: 10px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            color: #E9EAE9;
+            transition: all .4s;
+        }
+        
+        .code:hover {
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: -15px 15px 15px 0 rgba(0, 0, 0, .06);
+            background-color: rgba(0, 0, 0, .15);
+            transform: scale(1.05) translate(5%, -5%);
+        }
+        
+        .code * {
+            padding: 4px 0;
+        }
+        
+        .code .comments {
+            color: #888886;
+        }
+        
+        .code .key {
+            color: #FFB86C;
+        }
+        
+        .code .variable {
+            color: #F07178;
+        }
+        
+        .code .string {
+            color: #89CA78;
+        }
+        
+        .code .function {
+            color: #61AFEF;
+        }
+        
+        .code .error {
+            color: #DF6458;
+        }
+        
+        .code .indent1::before {
+            content: '\00A0\00A0\00A0';
+        }
+        
+        .code .indent2::before {
+            content: '\00A0\00A0\00A0\00A0\00A0\00A0';
+        }
+        /* background */
+        /* #313B45 */
+        /* #00A77B */
+        /* font */
+        /* #888886 */
+        /* #E9EAE9 */
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <section class="code">
+            <!-- <div>Uncaught TypeError: Cannot read property 'chat' of null at &lt;anonymous&gt;:1:6</div> -->
+            <div class="error">Exception in thread <span class="string">"GaolihaiSDailyLife"</span> <span class="key">life.lang.NullPointerException</span> </div>
+            <div class="error">at gaolihai.daily.debugging(<span class="error" style="text-decoration: underline;">debugging.java:4294967296</span>) </div>
+            <div class="error">at gaolihai.daily.coding(<span class="error" style="text-decoration: underline;">coding.java:65536</span>)</div>
+            <div class="error">at gaolihai.daily.eating(<span class="error" style="text-decoration: underline;">eating.java:256</span>)</div>
+            <div class="error">at gaolihai.daily.sleeping(<span class="error" style="text-decoration: underline;">sleeping.java:8</span>)</div>
+            <div class="error">at gaolihai.daily.StartANewDay(<span class="error" style="text-decoration: underline;">StartANewDay.java:1024</span>)</div>
+        </section>
+    </section>
+</body>
+
+</html>
